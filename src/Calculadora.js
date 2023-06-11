@@ -19,6 +19,10 @@ const Calculadora = () => {
             setResultado('Error');
         }
     }
+
+    const limpiarResultado = () => {
+        setResultado('');
+    }
 }
 
 export default Calculadora;
