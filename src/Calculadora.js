@@ -10,6 +10,15 @@ const Calculadora = () => {
     const handleButtonPress = (value) => {
         setResultado(resultado + value);
     }
+
+    const calcularResultado = () => {
+        try {
+            const evaluatedResult = math.evaluate(resultado);
+            setResultado(evaluatedResult.toString());
+        } catch (error) {
+            setResultado('Error');
+        }
+    }
 }
 
 export default Calculadora;
